@@ -1,0 +1,465 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Cloud Owner</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="layout/scripts/jquery.slidepanel.setup.js"></script>
+<style type="text/css">
+.style1 {font-size: 14}
+-->
+@charset "utf-8";
+/*
+Template Name: School Education
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Layout CSS
+*/
+
+@import url("navi.css");
+@import url("forms.css");
+@import url("tables.css");
+@import url("featured_slide.css");
+@import url("loginslider.css");
+
+html{overflow-y:scroll;}
+body{margin:0; padding:0; font-size:12px; font-family:verdana, Arial, Helvetica, sans-serif; color:#333333; background-color:#FFFFFF;}
+
+.justify{text-align:justify;}
+.bold{font-weight:bold;}
+.center{text-align:center;}
+.right{text-align:right;}
+.nostart{margin:0; padding:0; list-style-type:none;}
+
+.clear{clear:both;}
+br.clear{clear:both; margin-top:-15px;}
+
+a{outline:none; text-decoration:none;}
+
+.fl_left, .imgl{float:left;}
+.fl_right, .imgr{float:right;}
+
+img{display:block; margin:0; padding:0; border:none;}
+.imgl, .imgr{border:1px solid #999999; padding:5px;}
+.imgl{margin:0 8px 8px 0; clear:left;}
+.imgr{margin:0 0 8px 8px; clear:right;}
+
+/* ----------------------------------------------Wrapper------------------------------------- */
+
+div.wrapper{display:block; width:100%; margin:0; text-align:left;}
+div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{margin:0; padding:0; font-size:20px; font-weight:normal; line-height:normal; font-family:Georgia, "Times New Roman", Times, serif;}
+.col0{color:#FFFFFF; background-color:#2D3134; border-top:5px solid #4A5155;}
+.col1, .col1 a{color:#C4C5C3; background-color:#2D3134;}
+.col2{color:#FFFFFF; background-color:#02ACEE; padding:15px 0}
+.col3{color:#666666; background-color:#FFFFFF;}
+.col3 a{color:#02ACEE; background-color:#FFFFFF;}
+.col4{color:#CCCCCC; background-color:#2A2B2F;}
+.col4 a{color:#02ACEE; background-color:#2A2B2F;}
+.col5, .col5 a{color:#666666; background-color:#1B1B1B;}
+
+/* ----------------------------------------------Generalise------------------------------------- */
+
+#header, #topbar, #topnav, #breadcrumb, #homecontent, #container, #footer, #copyright{display:block; position:relative; width:960px; margin:0 auto;}
+
+/* ----------------------------------------------Header------------------------------------- */
+
+#header{padding:0 0 20px 0;}
+#header #logo{display:block; float:left; width:300px; margin-top:7px; overflow:hidden;}
+#header #logo h1, #header p, #header ul{margin:0; padding:0; list-style:none; line-height:normal;}
+#header #logo h1{font-size:32px;}
+
+/* ----------------------------------------------BreadCrumb------------------------------------- */
+
+#breadcrumb a{color:#FFFFFF; background-color:#02ACEE;}
+#breadcrumb ul{margin:0; padding:0; list-style:none;}
+#breadcrumb ul li{display:inline;}
+#breadcrumb ul li.current a{text-decoration:underline;}
+
+/* ----------------------------------------------Container------------------------------------- */
+
+#container{padding:20px 0;}
+#container h1, #container h2, #container h3, #container h4, #container h5, #container h6, #homecontent h2{font-size:20px; margin:0 0 15px 0; padding-bottom:8px; color:#666666; background-color:#FFFFFF; border-bottom:1px dotted #999999;}
+
+/* ----------------------------------------------Homepage------------------------------------- */
+
+#homecontent{padding:30px 0; line-height:1.3em;}
+#homecontent img{padding:4px; border:1px solid #999999;}
+#homecontent ul{margin:0; padding:0; list-style:none;}
+#homecontent p.readmore{font-weight:bold; text-align:right;}
+
+/* Left Column */
+
+#homecontent .fl_left{display:block; float:left; width:530px;}
+#homecontent .fl_left .column2{display:block; width:530px;}
+#homecontent .fl_left li{display:block; float:left; width:250px; margin:0 30px 30px 0; padding:0;}
+#homecontent .fl_left li.last{margin-right:0;}
+#homecontent .fl_left p.readmore{display:block; width:240px; padding:5px; text-align:right; line-height:normal; font-weight:bold;}
+
+/* Right Column */
+
+#homecontent .fl_right{display:block; float:right; width:385px;}
+#homecontent .fl_right li{display:block; width:385px; margin:0 0 10px 0; padding:0 0 8px 0; border-bottom:1px dotted #999999;}
+#homecontent .fl_right img{float:left; width:80px; height:80px; margin:0 10px 0 0;}
+
+/* ----------------------------------------------Content------------------------------------- */
+
+#content{display:block; float:left; width:600px;}
+
+/* Comments */
+
+#comments{margin-bottom:40px;}
+#comments .commentlist{margin:0; padding:0;}
+#comments .commentlist ul{margin:0; padding:0; list-style:none;}
+#comments .commentlist li.comment_odd, #comments .commentlist li.comment_even{margin:0 0 10px 0; padding:15px; list-style:none;}
+#comments .commentlist li.comment_odd{color:#666666; background-color:#F7F7F7;}
+#comments .commentlist li.comment_odd a{color:#02ACEE; background-color:#F7F7F7;}
+#comments .commentlist li.comment_even{color:#666666; background-color:#E8E8E8;}
+#comments .commentlist li.comment_even a{color:#02ACEE; background-color:#E8E8E8;}
+#comments .commentlist .author .name{font-weight:bold;}
+#comments .commentlist .submitdate{font-size:smaller;}
+#comments .commentlist p{margin:10px 5px 10px 0; padding:0; font-weight:normal; text-transform:none;}
+#comments .commentlist li .avatar{float:right; border:1px solid #EEEEEE; margin:0 0 0 10px;}
+
+/* ----------------------------------------------Column------------------------------------- */
+
+#column{display:block; float:right; width:300px;}
+#column .holder, #column #featured{display:block; width:300px; margin-bottom:20px;}
+#column .holder h2.title{display:block; width:100%; height:65px; margin:0; padding:15px 0 0 0; font-size:20px; line-height:normal; border-bottom:1px dotted #999999;}
+#column .holder h2.title img{float:left; margin:-15px 8px 0 0; padding:5px; border:1px solid #999999;}
+#column div.imgholder{display:block; width:290px; margin:0 0 10px 0; padding:4px; border:1px solid #CCCCCC;}
+#column .holder p.readmore{display:block; width:100%; font-weight:bold; text-align:right; line-height:normal;}
+
+/* Featured Block */
+
+#column #featured ul, #column #featured h2, #column #featured p{margin:0; padding:0; list-style:none; color:#666666; background-color:#F9F9F9;}
+#column #featured a{color:#02ACEE; background-color:#F9F9F9;}
+#column #featured li{display:block; width:250px; margin:0; padding:20px 25px; color:#666666; background-color:#F9F9F9;}
+#column #featured li p.imgholder{display:block; width:240px; height:90px; margin:20px 0 15px 0; padding:4px; border:1px solid #CCCCCC;}
+#column #featured li h2{margin:0; padding:0 0 8px 0; font-weight:normal; font-family:Georgia, "Times New Roman", Times, serif; line-height:normal; border-bottom:1px dotted #999999;}
+#column #featured p.readmore{display:block; width:100%; margin-top:15px; font-weight:bold; text-align:right; line-height:normal;}
+#column #latestnews{display:block; width:100%; margin:0; padding:0; list-style:none;}
+#column #latestnews li{display:block; margin:0 0 20px 0; padding:0 0 15px 0; border-bottom:1px dotted #CCCCCC;}
+#column #latestnews li.last{margin-bottom:0;}
+#column #latestnews p{margin:0 0 5px 0; padding:0;}
+#column #latestnews p.readmore{margin:0; padding:0;}
+#column #latestnews .imgl{margin:0 10px 10px 0; padding:4px;}
+
+/* ----------------------------------------------Footer------------------------------------- */
+
+#footer{padding:20px 0;}
+#footer h2, #footer p, #footer ul, #footer a{margin:0; padding:0; font-weight:normal; list-style:none; line-height:normal;}
+#footer h2{font-size:18px; font-weight:normal; margin-bottom:10px; padding-bottom:8px; border-bottom:1px dotted #999999;}
+#footer li{margin-bottom:5px;}
+#footer .footbox{display:block; float:left; width:180px; margin:0 15px 0 0; padding:0;}
+#footer .last{margin:0;}
+
+/* ----------------------------------------------Copyright------------------------------------- */
+
+#copyright{padding:15px 0;}
+#copyright p{margin:0; padding:0;}
+@charset "utf-8";
+/*
+Template Name: School Education
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: LoginSlider CSS
+
+Inspired By:Sliding Login Panel with jQuery from http://web-kreation.com/index.php/tutorials/nice-clean-sliding-login-panel-built-with-jquery/
+*/
+
+#topbar{position:relative; margin:0 auto; display:block; width:960px; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif;}
+#topbar a{color:#02ACEE; background-color:#4A5155;}
+#topbar a:hover{color:#FFFFFF; background-color:#4A5155;}
+#slidepanel{display:none; position:relative; width:960px; overflow:hidden; color:#E3DFD2; background:url("images/tab_l.gif") bottom left no-repeat #4A5155;}
+
+/* ----------------------------------------------Content------------------------------------- */
+
+#topbar .topbox{display:block; float:left; width:270px; margin:0 30px 0 0; padding:15px;}
+#topbar .last{margin-right:0;}
+#topbar h1, #topbar h2, #topbar h3, #topbar h4, #topbar h5, #topbar h6{font-size:18px; margin:0 0 15px 0; padding:0 0 8px 0; border-bottom:1px dotted #E7E6E6;}
+#topbar p{margin:0 0 15px 0; padding:0; line-height:1.6em;}
+#topbar p.readmore{display:block; margin:0; text-align:right; line-height:normal; font-weight:bold;}
+
+/* ----------------------------------------------Forms------------------------------------- */
+
+#topbar form, #topbar fieldset, #topbar legend{margin:0; padding:0; border:none;}
+#topbar legend{display:none;}
+#topbar input, #topbar textarea, #topbar select{font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif;}
+#topbar label{display:block; width:270px; margin:0 0 12px 0; padding:0;}
+#topbar label input{display:block; width:262px; margin:5px 0; padding:3px; color:#333333; background-color:#F8F7DF; border:1px solid #CCCCCC;}
+#topbar .topbox p input{padding:3px 10px; color:#666666; background-color:#F7F7F7; border:1px solid #CCCCCC; cursor:pointer;}
+#topbar label input.checkbox{display:inline; width:auto; margin:0 5px 0 0; padding:0;} 
+
+/* ----------------------------------------------Tab Panel------------------------------------- */
+
+#loginpanel{display:block; position:relative; top:0;}
+#loginpanel ul{display:block; float:right; width:210px; height:24px; margin:0; padding:6px 0 0 0; text-align:center; color:#E3DFD2; background-color:#4A5155;}
+#loginpanel li{display:block; height:24px; margin:0; padding:0;}
+#loginpanel li.left{float:left; text-align:right; padding-left:10px; background:url("images/tab_l.gif") no-repeat bottom left;}
+#loginpanel li.right{float:right; text-align:left; padding-right:10px; background:url("images/tab_r.gif") no-repeat bottom right;}
+#loginpanel a{display:block; width:100px;}
+
+@charset "utf-8";
+/*
+Template Name: School Education
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Navigation CSS
+*/
+
+#header #topnav{display:block; float:right; width:650px; margin:30px 0 0 0; padding:0; font-size:13px; font-family:Verdana, Arial, Helvetica, sans-serif; text-align:right;}
+#header ul{margin:0; padding:0; list-style:none;}
+#header li{display:inline; margin-right:35px;}
+#header li a:link, #header li a:visited, #header li a:hover{margin:0; padding:0 3px 10px 3px; color:#FFFFFF; background-color:#2D3134; border-bottom:1px solid #2D3134;}
+#header li a:hover, #header li.active a{color:#02ACEE; background-color:#2D3134; border-bottom-color:#02ACEE;}
+#header #topnav li.last{margin-right:0;}
+
+/* ----------------------------------------------Column Navigation------------------------------------- */
+
+#column .subnav{display:block; width:250px; padding:25px; background-color:#F9F9F9; margin-bottom:30px;}
+#column .subnav h2{margin:0 0 20px 0; padding:0 0 14px 0; font-size:20px; font-weight:normal; font-family:Georgia, "Times New Roman", Times, serif; color:#666666; background-color:#F9F9F9; line-height:normal; border-bottom:1px dotted #666666;}
+#column .subnav ul{margin:0; padding:0; list-style:none;}
+#column .subnav li{margin:0 0 3px 0; padding:0;}
+#column .subnav ul ul, #column .subnav ul ul ul, #column .subnav ul ul ul ul, #column .subnav ul ul ul ul ul{border-top:none; padding-top:0;}
+#column .subnav a{display:block; margin:0; padding:5px 10px 5px 20px; color:#777777; background:url("images/blue_file.gif") no-repeat 10px center #F9F9F9; text-decoration:none; border-bottom:1px dotted #666666;}
+#column .subnav a:hover{color:#02ACEE; background-color:#F9F9F9;}
+#column .subnav ul ul a, #column .subnav ul ul ul a, #column .subnav ul ul ul ul a, #column .subnav ul ul ul ul ul a{background:url("images/black_file.gif") no-repeat #F9F9F9;}
+#column .subnav ul ul a{padding-left:40px; background-position:30px center;}
+#column .subnav ul ul ul a{padding-left:50px; background-position:40px center;}
+#column .subnav ul ul ul ul a{padding-left:60px; background-position:50px center;}
+#column .subnav ul ul ul ul ul a{padding-left:70px; background-position:60px center;}
+
+@charset "utf-8";
+/*
+Template Name: School Education
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Forms CSS
+*/
+
+form, fieldset, legend{margin:0; padding:0; border:none;}
+legend{display:none;}
+input, textarea, select{font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif;}
+
+/* ----------------------------------------------Forms in Content Area------------------------------------- */
+
+#container #respond{display:block; width:100%;}
+#container #respond input{width:170px; padding:2px; border:1px solid #CCCCCC; margin:5px 5px 0 0;}
+#container #respond textarea{width:98%; border:1px solid #CCCCCC; padding:2px; overflow:auto;}
+#container #respond p{margin:5px 0;}
+#container #respond #submit, #container #respond #reset{margin:0; padding:5px; color:#666666; background-color:#F7F7F7; border:1px solid #CCCCCC; cursor:pointer;}
+@charset "utf-8";
+/*
+Template Name: School Education
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Featured Slider CSS
+*/
+
+#featured_slide{display:block; position:relative; width:960px; height:300px; margin:0 auto; overflow:hidden; font-size:13px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#FFFFFF; background-color:#22C0FD;}
+#featured_slide a{color:#01425A; background-color:#22C0FD;}
+#featured_slide a, #featured_slide ul, #featured_slide img{margin:0; padding:0; border:none; outline:none; list-style:none; text-decoration:none;}
+#featured_slide h1, #featured_slide h2, #featured_slide h3, #featured_slide h4, #featured_slide h5, #featured_slide h6{margin:0 0 15px 0; padding:0 0 8px 0; line-height:normal; font-size:32px; font-weight:normal; font-family:Georgia, "Times New Roman", Times, serif; border-bottom:1px dotted #CCCCCC;}
+
+/* ----------------------------------------------Content------------------------------------- */
+
+.featured_box{display:block; position:relative; width:960px; height:300px;}
+.featured_box img{display:block; float:left; width:450px; height:300px;}
+.featured_box .floater{display:inline; float:right; width:450px; margin:30px 30px 0 0;}
+.featured_box p{margin:0 0 15px 0; padding:0; line-height:1.6em;}
+.featured_box p.readmore{display:block; width:100%; margin:0; padding:0; text-align:right; line-height:normal; text-transform:uppercase;}
+
+/* ----------------------------------------------Navigation Buttons------------------------------------- */
+
+/*
+
+Navigation dynamically created using: jquery.cycle.min.js
+
+HTML Output:
+
+<div id="fsn">
+  <ul id="fs_pagination">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+  </ul>
+</div>
+
+*/
+
+#fsn{display:block; position:relative; width:960px; height:25px; margin:10px auto -5px; text-align:center; background-image:url("images/trans.png"); z-index:1000;}
+#fsn ul{display:block; position:relative; width:125px; height:20px; margin:0 auto; padding:5px 0 0 0; overflow:hidden; list-style:none;}
+#fsn ul li, #fsn ul li a{display:block; float:left; width:15px; height:15px; margin:0 10px 0 0; padding:0;}
+#fsn ul li a{float:none; border:none; margin:0; outline:none; text-indent:-5000px; text-decoration:none; background:url("images/slide.png") 50% 50% no-repeat;}
+#fsn ul li a:hover, #fsn ul li.activeSlide a{background:url("images/slide.png") 0% 50% no-repeat;}
+.style2 {color: #FFFFFF}
+.style3 {font-weight: bold}
+.style4 {font-weight: bold}
+.style5 {font-weight: bold}
+.style6 {font-weight: bold}
+.style7 {font-weight: bold}
+.style8 {color: #FFFFFF; font-weight: bold; }
+</style>
+</head>
+<body>
+<div class="wrapper col0">
+  <div id="topbar">
+    <div id="slidepanel">
+      <div class="topbox">
+        <h2>Nullamlacus dui ipsum</h2>
+        <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo nulla et feugiat. Adipisciniapellentum leo ut consequam ris felit elit id nibh sociis malesuada.</p>
+        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+      </div>
+      <div class="topbox">
+        <h2>Teachers Login Here</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Teachers Login Form</legend>
+            <label for="teachername">Username:
+              <input type="text" name="teachername" id="teachername" value="" />
+            </label>
+            <label for="teacherpass">Password:
+              <input type="password" name="teacherpass" id="teacherpass" value="" />
+            </label>
+            <label for="teacherremember">
+              <input class="checkbox" type="checkbox" name="teacherremember" id="teacherremember" checked="checked" />
+              Remember me</label>
+            <p>
+              <input type="submit" name="teacherlogin" id="teacherlogin" value="Login" />
+              &nbsp;
+              <input type="reset" name="teacherreset" id="teacherreset" value="Reset" />
+            </p>
+          </fieldset>
+        </form>
+      </div>
+      <div class="topbox last">
+        <h2>Pupils Login Here</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Pupils Login Form</legend>
+            <label for="pupilname">Username:
+              <input type="text" name="pupilname" id="pupilname" value="" />
+            </label>
+            <label for="pupilpass">Password:
+              <input type="password" name="pupilpass" id="pupilpass" value="" />
+            </label>
+            <label for="pupilremember">
+              <input class="checkbox" type="checkbox" name="pupilremember" id="pupilremember" checked="checked" />
+              Remember me</label>
+            <p>
+              <input type="submit" name="pupillogin" id="pupillogin" value="Login" />
+              &nbsp;
+              <input type="reset" name="pupilreset" id="pupilreset" value="Reset" />
+            </p>
+          </fieldset>
+        </form>
+      </div>
+      <br class="clear" />
+    </div>
+    
+    <br class="clear" />
+  </div>
+</div>
+
+<div class="wrapper col1">
+  <div id="header">
+    <div id="logo">
+      <h1><a href="index.php">Online Garbage Complaint Registration Management System</a></h1>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    </div>
+    <div id="topnav">
+      <ul>
+        <li class="active"><a href="/adminhome">Home</a></li>
+		<li><a href="/viewuser">View User</a></li>
+        <li><a href="/viewcomplaint">View Complaint</a></li>
+        <li><a href="/view1">View</a></li>
+        <li><a href="/reports">Reports</a></li>
+        <li><a href="/">Logout</a></li>
+        <li class="last"></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+
+<div class="wrapper col2">
+  <div id="breadcrumb">
+    <ul>
+      <li class="first">You Are Here</li>
+      <li>&#187;</li>
+      <li><a href="#">Home</a></li>
+      </ul>
+  </div>
+</div>
+
+<div class="wrapper col3">
+  <div id="container">
+    <h1>Welcome To Staff Details </h1>
+    <form id="form1" name="form1" method="post" action="">
+      <table width="90%" border="1" align="center">
+        <tr>
+          <td width="9%" height="40" bgcolor="#666666"><div align="center" class="style5 style2 style3">
+            <div align="center">Sl.No</div>
+          </div></td>
+          <td width="15%" bgcolor="#666666"><div align="center" class="style5 style2 style4">
+            <div align="center">Name</div>
+          </div></td>
+          <td width="8%" bgcolor="#666666"><div align="center" class="style2 style5">
+            <div align="center">Gender</div>
+          </div></td>
+          <td width="13%" bgcolor="#666666"><div align="center" class="style2 style6">
+            <div align="center">Email Id </div>
+          </div></td>
+          <td width="12%" bgcolor="#666666"><div align="center" class="style2 style7">
+            <div align="center">Phone Number </div>
+          </div></td>
+          <td width="13%" bgcolor="#666666"><div align="center" class="style8">Address</div></td>
+          <td width="10%" bgcolor="#666666"><div align="center" class="style8">Place</div></td>
+          <td width="10%" bgcolor="#666666"><div align="center" class="style8">User Name</div></td>
+        </tr>
+{% for item in data %}
+        <tr>
+          <td height="39"><div align="center">{{item[0]}}</div></td>
+          <td><div align="center">{{item[1]}}</div></td>
+          <td><div align="center">{{item[2]}}</div></td>
+          <td><div align="center">{{item[3]}}</div></td>
+          <td><div align="center">{{item[4]}}</div></td>
+          <td><div align="center">{{item[6]}}</div></td>
+          <td><div align="center">{{item[7]}}</div></td>
+          <td><div align="center">{{item[8]}}</div></td>
+        </tr>
+{% endfor %}
+      </table>
+    </form>
+    <p class="style1">&nbsp;</p>
+  </div>
+</div>
+<br />
+<br />
+
+<div class="wrapper col4"></div>
+
+<div class="wrapper col5">
+  <div id="copyright">
+    <p class="fl_left">Copyright &copy; 2017 - All Rights Reserved - <a href="#">Server</a></p>
+    <p class="fl_right">Desing by <a target="_blank" href="" title="Free Website Templates">Admin</a></p>
+    <br class="clear" />
+  </div>
+</div>
+</body>
+</html>
